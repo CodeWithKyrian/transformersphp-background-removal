@@ -1,7 +1,6 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+use Livewire\Volt\Volt;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Volt::route('/', 'homepage')->name('homepage');
+Volt::route('/results/{id}', 'results')->name('results');

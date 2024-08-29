@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use Codewithkyrian\Transformers\Transformers;
+use Codewithkyrian\Transformers\Utils\ImageDriver;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -19,6 +21,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        Transformers::setup()->setImageDriver(ImageDriver::VIPS);
     }
 }
