@@ -28,34 +28,34 @@ on([
 $download = action(fn () => response()->download(public_path($this->maskedImageUrl)))
     ->renderless();
 
-$remove = fn () => $this->redirectRoute('home');
+$remove = fn () => $this->redirectRoute('homepage');
 
 ?>
 
 <div class="px-4 py-8">
-    <h1 class="mb-8 text-center text-4xl font-bold text-indigo-900">TransformersPHP Background Removal Tool</h1>
+    <h1 class="mb-8 text-4xl font-bold text-center text-indigo-900">TransformersPHP Background Removal Tool</h1>
 
-    <div class="mb-8 relative flex items-center justify-center w-full">
+    <div class="relative flex items-center justify-center w-full mb-8">
         @if ($maskedImageUrl)
             <div id="image-compare" class="relative h-[32rem]">
-                <img id="masked-image" src="{{ asset($maskedImageUrl) }}" alt="Uploaded image" class="h-full w-auto">
-                <img src="{{ asset($imageUrl) }}" xalt="Uploaded image" class="h-full w-auto">
+                <img id="masked-image" src="{{ asset($maskedImageUrl) }}" alt="Uploaded image" class="w-auto h-full">
+                <img src="{{ asset($imageUrl) }}" xalt="Uploaded image" class="w-auto h-full">
                 <div
                     class="absolute inset-0 keep z-[-1] pattern-rectangles pattern-gray-600 pattern-size-4 pattern-opacity-20 pattern-bg-gray-200">
                 </div>
             </div>
         @else
             <div class="relative h-[32rem]">
-                <img src="{{ asset($imageUrl) }}" alt="Uploaded image" class="h-full w-auto">
+                <img src="{{ asset($imageUrl) }}" alt="Uploaded image" class="w-auto h-full">
                 <div class="absolute inset-0 flex items-center justify-center backdrop-blur-sm">
-                    <img src="{{ asset('img/ai-loading.gif') }}" alt="loading..." class="h-24 w-24">
+                    <img src="{{ asset('img/ai-loading.gif') }}" alt="loading..." class="w-24 h-24">
                 </div>
             </div>
         @endif
     </div>
 
-    <div class="px-4 flex justify-center">
-        <button class="px-6 py-4 mx-2 rounded bg-indigo-600 text-white hover:bg-indigo-700 inline-flex items-center"
+    <div class="flex justify-center px-4">
+        <button class="inline-flex items-center px-6 py-4 mx-2 text-white bg-indigo-600 rounded hover:bg-indigo-700"
             wire:click="download">
             <svg class="size-4 me-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                 stroke-width="2" stroke="currentColor">
@@ -64,7 +64,7 @@ $remove = fn () => $this->redirectRoute('home');
             </svg>
             Download
         </button>
-        <button class="px-6 py-4 mx-2 rounded bg-indigo-600 text-white hover:bg-indigo-700 inline-flex items-center"
+        <button class="inline-flex items-center px-6 py-4 mx-2 text-white bg-indigo-600 rounded hover:bg-indigo-700"
             wire:click="remove">
             <svg class="size-4 me-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                 stroke-width="2" stroke="currentColor">

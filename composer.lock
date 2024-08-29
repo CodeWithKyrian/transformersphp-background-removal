@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6d7069e1c62ed7ea793ff236dafd5d92",
+    "content-hash": "583ac7793393b196bbc39ab6a4885805",
     "packages": [
         {
             "name": "brick/math",
@@ -314,16 +314,16 @@
         },
         {
             "name": "codewithkyrian/transformers",
-            "version": "0.5.1",
+            "version": "0.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/CodeWithKyrian/transformers-php.git",
-                "reference": "5a04b2cb51f61c8f3c0a71c88e181ca1d7018406"
+                "reference": "d4c59599db5ef5d1639b78be375eb61966d7846c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CodeWithKyrian/transformers-php/zipball/5a04b2cb51f61c8f3c0a71c88e181ca1d7018406",
-                "reference": "5a04b2cb51f61c8f3c0a71c88e181ca1d7018406",
+                "url": "https://api.github.com/repos/CodeWithKyrian/transformers-php/zipball/d4c59599db5ef5d1639b78be375eb61966d7846c",
+                "reference": "d4c59599db5ef5d1639b78be375eb61966d7846c",
                 "shasum": ""
             },
             "require": {
@@ -383,9 +383,9 @@
             ],
             "support": {
                 "issues": "https://github.com/CodeWithKyrian/transformers-php/issues",
-                "source": "https://github.com/CodeWithKyrian/transformers-php/tree/0.5.1"
+                "source": "https://github.com/CodeWithKyrian/transformers-php/tree/0.5.2"
             },
-            "time": "2024-08-24T05:26:01+00:00"
+            "time": "2024-08-29T13:06:57+00:00"
         },
         {
             "name": "codewithkyrian/transformers-libsloader",
