@@ -19,6 +19,7 @@ class RemoveImageBackground implements ShouldQueue
     use Queueable;
 
     protected string $modelName = 'briaai/RMBG-1.4';
+    // protected string $modelName = 'Xenova/modnet';
 
 
     /**

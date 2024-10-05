@@ -6,8 +6,9 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
-        "codewithkyrian/transformers": "^0.5.2",
+        "codewithkyrian/transformers": "^0.5.3",
         "laravel/framework": "^11.9",
+        "laravel/pail": "^1.1",
         "laravel/reverb": "^1.0",
         "laravel/tinker": "^2.9",
         "livewire/livewire": "^3.5",

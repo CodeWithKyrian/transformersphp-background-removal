@@ -21,6 +21,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        Transformers::setup()->setImageDriver(ImageDriver::VIPS);
+        Transformers::setup()
+            ->setCacheDir('/Users/Kyrian/.transformers')
+            ->setImageDriver(ImageDriver::VIPS);
     }
 }

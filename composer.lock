@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "583ac7793393b196bbc39ab6a4885805",
+    "content-hash": "50eca5be934e69e5ac9f2a1c77a970ee",
     "packages": [
         {
             "name": "brick/math",
@@ -314,16 +314,16 @@
         },
         {
             "name": "codewithkyrian/transformers",
-            "version": "0.5.2",
+            "version": "0.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/CodeWithKyrian/transformers-php.git",
-                "reference": "d4c59599db5ef5d1639b78be375eb61966d7846c"
+                "reference": "474406c25d33e36fcc4f6225719a46afa82acbf8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CodeWithKyrian/transformers-php/zipball/d4c59599db5ef5d1639b78be375eb61966d7846c",
-                "reference": "d4c59599db5ef5d1639b78be375eb61966d7846c",
+                "url": "https://api.github.com/repos/CodeWithKyrian/transformers-php/zipball/474406c25d33e36fcc4f6225719a46afa82acbf8",
+                "reference": "474406c25d33e36fcc4f6225719a46afa82acbf8",
                 "shasum": ""
             },
             "require": {
@@ -383,9 +383,9 @@
             ],
             "support": {
                 "issues": "https://github.com/CodeWithKyrian/transformers-php/issues",
-                "source": "https://github.com/CodeWithKyrian/transformers-php/tree/0.5.2"
+                "source": "https://github.com/CodeWithKyrian/transformers-php/tree/0.5.3"
             },
-            "time": "2024-08-29T13:06:57+00:00"
+            "time": "2024-09-27T19:39:27+00:00"
         },
         {
             "name": "codewithkyrian/transformers-libsloader",
@@ -1764,6 +1764,84 @@
                 "source": "https://github.com/laravel/framework"
             },
             "time": "2024-08-20T15:00:52+00:00"
+        },
+        {
+            "name": "laravel/pail",
+            "version": "v1.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/pail.git",
+                "reference": "2f3f132bba2950037cdcb138fcc9ee1223f24566"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/pail/zipball/2f3f132bba2950037cdcb138fcc9ee1223f24566",
+                "reference": "2f3f132bba2950037cdcb138fcc9ee1223f24566",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "ext-pcntl": "*",
+                "illuminate/console": "^10.24|^11.0",
+                "illuminate/contracts": "^10.24|^11.0",
+                "illuminate/log": "^10.24|^11.0",
+                "illuminate/process": "^10.24|^11.0",
+                "illuminate/support": "^10.24|^11.0",
+                "nunomaduro/termwind": "^1.15|^2.0",
+                "php": "^8.2",
+                "symfony/console": "^6.0|^7.0"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.13",
+                "orchestra/testbench": "^8.12|^9.0",
+                "pestphp/pest": "^2.20",
+                "pestphp/pest-plugin-type-coverage": "^2.3",
+                "phpstan/phpstan": "^1.10",
+                "symfony/var-dumper": "^6.3|^7.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Pail\\PailServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Pail\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                },
+                {
+                    "name": "Nuno Maduro",
+                    "email": "enunomaduro@gmail.com"
+                }
+            ],
+            "description": "Easily delve into your Laravel application's log files directly from the command line.",
+            "homepage": "https://github.com/laravel/pail",
+            "keywords": [
+                "laravel",
+                "logs",
+                "php",
+                "tail"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel/pail/issues",
+                "source": "https://github.com/laravel/pail"
+            },
+            "time": "2024-09-16T19:09:17+00:00"
         },
         {
             "name": "laravel/prompts",
