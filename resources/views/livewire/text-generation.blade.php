@@ -6,10 +6,8 @@ use App\Jobs\RemoveImageBackground;
 use Codewithkyrian\Transformers\Generation\Streamers\TextStreamer;
 use Codewithkyrian\Transformers\Generation\Streamers\StreamMode;
 
-use function Livewire\Volt\{state, usesFileUploads};
+use function Livewire\Volt\{state};
 use function Codewithkyrian\Transformers\Pipelines\pipeline;
-
-usesFileUploads();
 
 state([
     'prompt',
