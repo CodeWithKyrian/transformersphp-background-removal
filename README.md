@@ -30,7 +30,7 @@ This project is a Laravel-based web application that demonstrates the power of [
 
 1. Clone the repository:
    ```
-   git clone https://github.com/your-username/transformersphp-background-removal.git
+   git clone https://github.com/CodeWithKyrian/transformersphp-background-removal.git
    cd transformersphp-background-removal
    ```
 
